@@ -1,11 +1,9 @@
-
 #header {
   position: fixed;
   top: 0;
   width: 100%;
   height: 5em;
   z-index: 20;
-  background-color: #5956bc;
 }
 
 #nav {
@@ -17,7 +15,6 @@
   left: 0;
   width: 5em;
   z-index: 20;
-  background-color: #93bee3;
 }
 
 #subnav {
@@ -29,7 +26,6 @@
   left: 6em;
   width: 13em;
   z-index: 20;
-  background-color: #6ad0a8;
 }
 
 #main {
@@ -38,7 +34,6 @@
   // -- and thus allows to overflow on body and have scroll
   margin: 6em 0 4em 20em;
   min-height: 1300px;
-  background-color: #c7b374;
   // -- makes sure this always goes behind all other fixed elements
   z-index: 10;
 }
@@ -50,5 +45,4 @@
   right: 0;
   height: 3em;
   z-index: 20;
-  background-color: #5956bc;
 }
