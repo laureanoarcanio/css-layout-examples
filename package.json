@@ -1,14 +1,14 @@
 {
-  "name": "fireshell",
-  "title": "Fiercely quick and opinionated front-ends",
-  "url": "http://getfireshell.com",
-  "author": "Todd Motto",
+  "name": "Laureano Arcanio",
+  "title": "CSS Layout techniques explained",
+  "url": "https://github.com/laureanoarcanio",
+  "author": "Laureano Arcanio",
   "copyright": "2013",
   "version": "1.0.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "http://github.com/toddmotto/fireshell.git"
+    "url": "https://github.com/laureanoarcanio/great-layout"
   },
   "devDependencies": {
     "autoprefixer-core": "^5.2.0",
