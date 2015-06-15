@@ -193,6 +193,20 @@ module.exports = function (grunt) {
           '<%= project.assets %>/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
         ]
       }
+    },
+
+    postcss: {
+        options: {
+            map: true,
+            processors: [
+                require('autoprefixer-core')({
+                    browsers: ['last 2 versions']
+                })
+            ]
+        },
+        dist: {
+            src: 'app/assets/css/*.css'
+        }
     }
   });
 
@@ -205,6 +219,7 @@ module.exports = function (grunt) {
     'jshint',
     'concat:dev',
     'connect:livereload',
+    'postcss',
     'open',
     'watch'
   ]);
