@@ -1,48 +1,50 @@
-#header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 5em;
-  z-index: 20;
-}
+.layout-classic {
+  #header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 5em;
+    z-index: 20;
+  }
 
-#nav {
-  position: fixed;
-  // -- this case the navbar is vertically expanded to be between
-  // -- header and footer
-  top: 6em;
-  bottom: 4em;
-  left: 0;
-  width: 5em;
-  z-index: 20;
-}
+  #nav {
+    position: fixed;
+    // -- this case the navbar is vertically expanded to be between
+    // -- header and footer
+    top: 6em;
+    bottom: 4em;
+    left: 0;
+    width: 5em;
+    z-index: 20;
+  }
 
-#subnav {
-  position: fixed;
-  // -- this case the navbar is vertically expanded to be between
-  // -- header and footer
-  top: 6em;
-  bottom: 4em;
-  left: 6em;
-  width: 13em;
-  z-index: 20;
-}
+  #subnav {
+    position: fixed;
+    // -- this case the navbar is vertically expanded to be between
+    // -- header and footer
+    top: 6em;
+    bottom: 4em;
+    left: 6em;
+    width: 13em;
+    z-index: 20;
+  }
 
-#main {
-  // -- This is supposed to be fluid, so we just add margins
-  // -- to fit between all fixed elements
-  // -- and thus allows to overflow on body and have scroll
-  margin: 6em 0 4em 20em;
-  min-height: 1300px;
-  // -- makes sure this always goes behind all other fixed elements
-  z-index: 10;
-}
+  #main {
+    // -- This is supposed to be fluid, so we just add margins
+    // -- to fit between all fixed elements
+    // -- and thus allows to overflow on body and have scroll
+    margin: 6em 0 4em 20em;
+    min-height: 1300px;
+    // -- makes sure this always goes behind all other fixed elements
+    z-index: 10;
+  }
 
-#footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 3em;
-  z-index: 20;
+  #footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3em;
+    z-index: 20;
+  }
 }
