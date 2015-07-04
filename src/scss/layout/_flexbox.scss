@@ -18,6 +18,12 @@
       flex: 0 1 5em;
       margin-right: 1em;
       overflow-y: auto; 
+
+      // We just need to say to one container how big it is
+      // flexbox does the rest
+      &.expanded {
+        flex: 0 1 10em;
+      }
     }
 
     #subnav {

@@ -16,6 +16,10 @@
     left: 0;
     width: 5em;
     z-index: 20;
+
+    &.expanded {
+      width: 10em;
+    }
   }
 
   #subnav {
@@ -27,16 +31,39 @@
     left: 6em;
     width: 13em;
     z-index: 20;
+
+    &.expanded {
+      left: 11em;
+    }
   }
 
   #main {
     // -- This is supposed to be fluid, so we just add margins
     // -- to fit between all fixed elements
     // -- and thus allows to overflow on body and have scroll
-    margin: 6em 0 4em 20em;
+    margin: 6em 0 4em 6em;
     min-height: 1300px;
     // -- makes sure this always goes behind all other fixed elements
     z-index: 10;
+
+    &.expanded {
+      margin-left: 11em;
+    }
+  }
+  // if it's next to #subnav then move right
+  // depending if it's expanded or not, move to left
+  #subnav + #main {
+    margin-left: 20em;
+  }
+  #subnav + #main.expanded {
+    margin-left: 25em;
+  }
+  // if it's next to #subnav but it's hidden
+  #subnav.hidden + #main {
+    margin-left: 6em;
+  }
+  #subnav.hidden + #main.expanded {
+    margin-left: 11em;
   }
 
   #footer {

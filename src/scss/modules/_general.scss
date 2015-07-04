@@ -1,3 +1,60 @@
+html, body {
+  height: 100%;
+}
+
 body {
   font-size: 16px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+#subnav {
+  .fa.fa-close {
+    font-size: 1.5em;
+    float: right;
+    margin: 0.5em;
+    cursor: pointer;
+  }
+}
+
+.icon-list {
+  text-align: center;
+  .fa {
+    font-size: 2em;
+    vertical-align: middle;
+  }
+  span {
+    margin-left: 0.5em;
+    display: none;
+  }
+
+  li {
+    cursor: pointer;
+    margin-top: 1em;
+
+    &:hover {
+      color: #CCC;
+    }
+  }
+}
+
+.expanded {
+  .icon-list {
+    li {
+      text-align: left;
+      padding-left: 1em;
+      vertical-align: middle;
+      span {
+        display: inline;
+      }
+    }
+  }
 }
