@@ -10,8 +10,13 @@
     $('#subnav').toggleClass('hidden');
   });
 
-  $('#nav').on('click', 'li.nav-toggle', function() {
+  // when classic layout we need to set expanded for all affected childs
+  $('.layout-classic #nav').on('click', 'li.nav-toggle', function() {
     $('#nav, #subnav, #main').toggleClass('expanded');
   });
-  
+  // Flexbox and Grid are context sensitive, just changing nav CSS do the rest
+  $('.layout-flexbox #nav, .layout-grid #nav').on('click', 'li.nav-toggle', function() {
+    $('#nav').toggleClass('expanded');
+  });
+
 })(jQuery, window, document);

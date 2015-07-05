@@ -18,10 +18,8 @@
 
   #nav, #subnav {
     position: fixed;
-    // -- this case the navbar is vertically expanded to be between
-    // -- header and footer
-    top: 6em;
-    bottom: 4em;
+    // we use calc and we substract header and footer heights and 2em margin
+    height: calc(100% - 10em);
     z-index: 20;
   }
 
